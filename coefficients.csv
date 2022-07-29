@@ -1,0 +1,11 @@
+Name,coefficient,error,mean,std,Units
+Intercept,5.587,0.034,0,1.0,"Intercept"
+Men,0.131,0.036,0.527,1.0,""
+Age,0.174,0.036,55.1,11.9,"years"
+Glucose,0.604,0.037,5.75,1.28,"mmol/L"
+Cholesterol,-0.366,0.035,5.39,1.03,"mmol/L"
+Triglycerides,0,0,1.33,0.94,"mmol/L"
+AST,0.331,0.056,25,16,"IU/L"
+ALT,0.032,0.045,26,18,"IU/L"
+GGT,1.301,0.048,46,79,"IU/L"
+Platelets,-0.303,0.036,245,61.1,"x1,000/µL"
