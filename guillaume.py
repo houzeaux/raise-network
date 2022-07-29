@@ -26,7 +26,7 @@ columns = list(data.columns)
 rows = ["All rows"]+list(data.index)
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
-col = selector_columns.selectbox(
+col = selector_columns.slider(
         'Select a Column',
         ('Region','Activity')
         )
@@ -35,7 +35,6 @@ row = selector_rows.selectbox(
         rows
         )
 
-col.write('You have selected:', choice)
 
 if row == "All rows":
     for name,content in data.iterrows():
