@@ -14,18 +14,12 @@ footer = st.container()
 main_panel.markdown(reduce_header_height_style, unsafe_allow_html=True)
 main_panel.markdown(unblur_header,unsafe_allow_html=True)
 
-primaryColor = '#7792E3'
-
-# Background color for the main content area
-backgroundColor = '#273346'
-
-# Background color for sidebar and most interactive widgets
-secondaryBackgroundColor = '#B9F1C0'
-
 # doing the upper menu
 #
 #sidebar.image("imgs/logo.png",width=200)
 #sidebar.write("## Risk Score Calculator")
+
+footer.image("imgs/raise.png",width=200)
 
 data = pd.read_csv("data/interactions.csv").set_index("Interaction description")
 data = data.sort_values(by="Region")
