@@ -29,12 +29,13 @@ selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
         'Select a Column',
         ('Region','Activity')
-        st.write('You have selected:', choice)
         )
 row = selector_rows.selectbox(
         'Select a Row',
         rows
         )
+
+selector_columns.write('You have selected:', choice)
 
 if row == "All rows":
     for name,content in data.iterrows():
