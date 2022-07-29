@@ -35,7 +35,7 @@ row = selector_rows.selectbox(
         rows
         )
 
-selector_columns.write('You have selected:', choice)
+col.write('You have selected:', choice)
 
 if row == "All rows":
     for name,content in data.iterrows():
