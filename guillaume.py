@@ -20,7 +20,7 @@ main_panel.markdown(unblur_header,unsafe_allow_html=True)
 #sidebar.write("## Risk Score Calculator")
 
 footer.image("imgs/raise.png",width=200)
-
+footer.write("## Risk Score Calculator")
 data = pd.read_csv("data/interactions.csv").set_index("Interaction description")
 data = data.sort_values(by="Region")
 
