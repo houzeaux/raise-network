@@ -14,6 +14,14 @@ footer = st.container()
 main_panel.markdown(reduce_header_height_style, unsafe_allow_html=True)
 main_panel.markdown(unblur_header,unsafe_allow_html=True)
 
+primaryColor = '#7792E3'
+
+# Background color for the main content area
+backgroundColor = '#273346'
+
+# Background color for sidebar and most interactive widgets
+secondaryBackgroundColor = '#B9F1C0'
+
 # doing the upper menu
 #
 #sidebar.image("imgs/logo.png",width=200)
@@ -26,7 +34,7 @@ columns = list(data.columns)
 rows = ["All rows"]+list(data.index)
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
-col = selector_columns.slider(
+col = selector_columns.selectbox(
         'Select a Column',
         ('Region','Activity')
         )
