@@ -19,7 +19,7 @@ main_panel.markdown(unblur_header,unsafe_allow_html=True)
 #sidebar.image("imgs/logo.png",width=200)
 #sidebar.write("## Risk Score Calculator")
 
-data = pd.read_csv("data/coefficients.csv").set_index("Name")
+data = pd.read_csv("data/interactions.csv").set_index("Name")
 
 columns = list(data.columns)
 rows = ["All rows"]+list(data.index)
