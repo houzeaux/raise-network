@@ -24,7 +24,7 @@ data = pd.read_csv("data/interactions.csv").set_index("Interaction description")
 columns = list(data.columns)
 rows = ["All rows"]+list(data.index)
 
-rows = rows.sort_values(by='Region')
+rows = rows.sort_values(by="Region")
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
