@@ -19,12 +19,14 @@ main_panel.markdown(unblur_header,unsafe_allow_html=True)
 #sidebar.image("imgs/logo.png",width=200)
 #sidebar.write("## Risk Score Calculator")
 
-data = pd.read_csv("data/interactions.csv").set_index("Activity")
+data = pd.read_csv("data/interactions.csv").set_index("Interaction description")
 
 columns = list(data.columns)
 rows = ["All rows"]+list(data.index)
 
-selector_columns, spacer, selector_rows = main_panel.columns([3,2,3])
+data.sort_values(by, axis=0, ascending=True, inplace=False, kind='quicksort', na_position='last', ignore_index=False, key=None)
+
+selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
         'Select a Column',
         columns
