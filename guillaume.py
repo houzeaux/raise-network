@@ -39,7 +39,7 @@ if row == "All rows":
         main_panel.markdown( "#### "+ name +": " )
         main_panel.markdown("         " + str(content[col])  )
 else:
-    main_panel.write( "#### " + str(data.loc[row,col])  )
+    main_panel.write( "#### " + str(data.loc[row,6])  )
 
 
 
