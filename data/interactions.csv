@@ -1,5 +1,4 @@
 Partner,Region,Activity,Institution/company,Community,Interaction description,Date ,Minutes
-,,,,,,,
 FZJ (DE),Germany,Generic,Gauss Centre for Supercomputing (GCS),HPC,"Association consisting of the three largest HPC centers in Germany that provide resources on Tier-0 and Tier-1 level, i.e., Jülich Supercomputing Centre (JSC), High-Performance Center Stuttgart (HLRS), and Leibniz Supercomputing Centre (LRZ). Discussions already took place with Dr. Claus Axel Müller (Managing Director GCS) a priori the project ",M6,
 FZJ (DE),Germany,Generic,Helmholtz AI (previously named HAICU),AI,"Research-driven hub for applied AI as part of the Helmholtz Association in Germany. An informal meeting with Helmholtz AI (Dr. Stefan Kesselheim, Head of the AI consultant team at FZJ, took place on Jan. 14, 2021. No minutes have been recorded",M6,
 FZJ (DE),Germany,,Industry Relations Team (IRT),HPC,"The IRT is part of JSC and is responsible for bridging HPC, AI, and HPDA expertise from JSC to industrial customers. The Coordinator or CoE RAISE is a member of the IRT. Meetings take place bimonthly",M6,
@@ -36,12 +35,3 @@ CERFACS (FR),France,,AIRBUS,,"The interactions with AIRBUS are yet to be determi
 CERFACS (FR),France,To create awareness in a broader audience,"IRT, ONERA, AIRBUS, CNES, SAFRAN, TotalEnergies, Météo-France",AI Industry,"An “AI Day” was organized at CERFACS in Q1 2022, with over 60 participants from the French academic and industrial high-performance simulation ecosystem. This included members of IRT, ONERA, AIRBUS, CNES, SAFRAN, TotalEnergies, Météo-France, as well as several public labs",M18,
 CERFACS (FR),France,To create awareness in a broader audience,2022 Teratec Forum,,"Other dissemination activities have targeted the French ecosystem, such as an intervention at the 2022 Teratec Forum",M18,
 FM (BE),Belgium,To create awareness in a broader audience,Industrial manufacturing companies,,"During Q1 2022, a newsletter was sent around to the FM Industrial Network, consisting of industrial manufacturing companies with more than 150 members. The content of the news article was mainly focussed on the contribution of FM to the RAISE project regarding defect- free metal additive manufacturing. Tangible outputs related to other use-cases relevant to the manufacturing industry are still limited in this phase of the project. As a result of this newsletter, one member of the network requested to be kept informed about further results obtained. Melotte is located in Belgium and focuses on 3D metal printing and high precision manufacturing. Melotte will be contacted during a later phase in the project when tangible results from task 4.3 are available. Other companies in the 3D manufacturing business and member of the FM industrial network, e.g., Materialise, Layerwise, and ESMA, have not responded to the newsletter.",M18,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36,
-,,,,,,M36, 
