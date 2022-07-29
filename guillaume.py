@@ -23,7 +23,7 @@ data = pd.read_csv("data/interactions.csv").set_index("Interaction description")
 data = data.sort_values(by="Region")
 
 columns = list(data.columns)
-rows = ["All rows"]+list(data.columns)
+rows = ["All rows"]+list(data.rows)
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
