@@ -24,7 +24,7 @@ data = pd.read_csv("data/interactions.csv").set_index("Activity")
 columns = list(data.columns)
 rows = ["All rows"]+list(data.index)
 
-selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
+selector_columns, spacer, selector_rows = main_panel.columns([3,2,3])
 col = selector_columns.selectbox(
         'Select a Column',
         columns
