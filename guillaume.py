@@ -36,8 +36,8 @@ row = selector_rows.selectbox(
 
 if row == "All rows":
     for name,content in data.iterrows():
-        main_panel.markdown("         " + str(content[col]) + ", " + str(content[0]) + ", " + str(content[1]) )
-        main_panel.markdown( "#### "+ name +": " )
+        main_panel.markdown("         " + str(content[col]) + ", " + str(content[0]) + ", " + str(content[1]) +':' )
+        main_panel.markdown( "### "+ name +": " )
 else:
     main_panel.write( "#### " + str(data.loc[row,col])  )
 
