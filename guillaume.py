@@ -49,12 +49,12 @@ if col == "Region":
             main_panel.markdown( "Activity:    "+str(content[2]) )
             main_panel.markdown( "Institution: "+str(content[3]) )
             main_panel.markdown( "Community:   "+str(content[4]) )
-            main_panel.markdown("""<p>Hello
+            main_panel.markdown("<p>Hello
 allo<br>
 pipi<br>
 caca<br>
 The idea is to have a quick and useful sheet where anyone can copy and past the code (1 line command usually) to generate the charts below.</p>
-""")
+")
     else:
         for name,content in data.loc[data[col]==row,:].iterrows():
             main_panel.markdown("#####  " + str(content[1]) + ", " + str(content[0]) +':' )
