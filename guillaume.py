@@ -49,9 +49,9 @@ if col == "Region":
             main_panel.markdown( "* Institution: "+str(content[3]) )
             main_panel.markdown( "* Community:   "+str(content[4]) )
             main_panel.markdown( "* Description: "+ name +": " )
-            main_panel.markdown( "caca
+            main_panel.markdown( """caca
 
-                                  pipi")
+                                  pipi""")
     else:
         for name,content in data.loc[data[col]==row,:].iterrows():
             main_panel.markdown("#####  " + str(content[1]) + ", " + str(content[0]) +':' )
