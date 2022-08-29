@@ -51,9 +51,9 @@ if col == "Region":
             main_panel.markdown( "Community:   "+str(content[4]) )
             main_panel.markdown("""Hello
 
-# allo
-# pipi
-# caca
+* allo
+* pipi
+* caca
 The idea is to have a quick and useful sheet where anyone can copy and past the code (1 line command usually) to generate the charts below.
 """)
     else:
