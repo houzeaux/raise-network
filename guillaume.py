@@ -28,13 +28,14 @@ data = pd.read_csv("data/interactions.csv").set_index("Interaction description")
 data = data.sort_values(by="Region")
 
 columns = list(data.columns)
-rows = ["All rows"]+list(data.index)
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
         'Select a Column',
         ('Region','Activity')
         )
+datafilter = data[col].unique()
+rows = ["All rows"]+list(datafilter)
 row = selector_rows.selectbox(
         'Select a Row',
         rows
@@ -46,8 +47,9 @@ if row == "All rows":
         main_panel.markdown("######  " + str(content[col]) + ", " + str(content[0]) + ", " + str(content[1]) +':' )
         main_panel.markdown( " "+ name +": " )
 else:
-    main_panel.write( "#### " + str(data.loc[row,col])  )
-
+    for name,content in data.loc[data[col]==row,:].iterrows():
+        main_panel.markdown("######  " + str(content[col]) + ", " + str(content[0]) + ", " + str(content[1]) +':' )
+        main_panel.markdown( " "+ name +": " )
 
 
 
