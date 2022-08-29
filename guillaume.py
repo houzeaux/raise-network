@@ -37,7 +37,7 @@ col = selector_columns.selectbox(
 datafilter = data[col].unique()
 rows = ["All rows"]+list(datafilter)
 row = selector_rows.selectbox(
-        'Select a Row',
+        'Select an item',
         rows
         )
 
@@ -46,20 +46,28 @@ if col == "Region":
         for name,content in data.iterrows():
             main_panel.markdown("######  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( " "+ name +": " )
-            main_panel.markdown( "Activity"+str(content[2]) )
+            main_panel.markdown( "Activity:    "+str(content[2]) )
+            main_panel.markdown( "Institution: "+str(content[3]) )
+            main_panel.markdown( "Community:   "+str(content[4]) )
     else:
         for name,content in data.loc[data[col]==row,:].iterrows():
             main_panel.markdown("######  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( " "+ name +": " )
-            main_panel.markdown( "Activity"+str(content[2]) )
+            main_panel.markdown( "Activity:    "+str(content[2]) )
+            main_panel.markdown( "Institution: "+str(content[3]) )
+            main_panel.markdown( "Community:   "+str(content[4]) )
 else:
     if row == "All rows":
         for name,content in data.iterrows():
             main_panel.markdown("######  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( " "+ name +": " )
+            main_panel.markdown( "Institution: "+str(content[3]) )
+            main_panel.markdown( "Community:   "+str(content[4]) )
     else:
         for name,content in data.loc[data[col]==row,:].iterrows():
             main_panel.markdown("######  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( " "+ name +": " )
+            main_panel.markdown( "Institution: "+str(content[3]) )
+            main_panel.markdown( "Community:   "+str(content[4]) )
         
 
