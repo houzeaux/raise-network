@@ -49,7 +49,7 @@ if col == "Region":
             main_panel.markdown( "Activity:    "+str(content[2]) )
             main_panel.markdown( "Institution: "+str(content[3]) )
             main_panel.markdown( "Community:   "+str(content[4]) )
-            st.markdown("""Hello
+            main_panel.markdown("""Hello
 
 This is a cheat sheet built with the most common charts that I use in the data analysis for the projects.
 
