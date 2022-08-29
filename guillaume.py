@@ -50,6 +50,7 @@ if col == "Region":
             main_panel.markdown( "* Community:   "+str(content[4]) )
             main_panel.markdown( "* Description: "+ name +": " )
             main_panel.markdown( """caca
+
                                   pipi"""
                                 )
     else:
