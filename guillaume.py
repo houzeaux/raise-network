@@ -41,15 +41,18 @@ row = selector_rows.selectbox(
         rows
         )
 
-
+if col == "Region":
 if row == "All rows":
     for name,content in data.iterrows():
-        main_panel.markdown("######  " + str(content[0]) + ", " + str(content[1]) +':' )
+        main_panel.markdown("######  " + str(content[1]) + ", " + str(content[0]) +':' )
         main_panel.markdown( " "+ name +": " )
 else:
     for name,content in data.loc[data[col]==row,:].iterrows():
-        main_panel.markdown("######  " + str(content[0]) + ", " + str(content[1]) +':' )
+        main_panel.markdown("######  " + str(content[1]) + ", " + str(content[0]) +':' )
         main_panel.markdown( " "+ name +": " )
+end if:        
+else:
 
-
+end if:
+        
 
