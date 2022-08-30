@@ -56,7 +56,8 @@ main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: ra
 if(main_panel.button("Show map")):
     main_panel.image("imgs/map.png")
 else:
-    
+    main_panel.markdown( "  " )        
+ 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
         'Select a category',
