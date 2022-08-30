@@ -53,9 +53,8 @@ main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: ra
 
 #link = '[Map](./imgs/map.png)'
 #main_panel.markdown(link, unsafe_allow_html=True)
-mymap = main_panel.image("imgs/map.png")
 if(main_panel.button("Show map")):
-    main_panel.image("imgs/map.png")
+    mymap = main_panel.image("imgs/map.png")
 else:
     mymap = main_panel.empty()
  
