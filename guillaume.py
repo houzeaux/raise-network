@@ -24,7 +24,7 @@ st.markdown(
     f'''
         <style>
             .sidebar .sidebar-content {{
-                width: 375px;
+                width: 675px;
             }}
         </style>
     ''',
