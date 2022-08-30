@@ -46,17 +46,7 @@ data = data.sort_values(by="Region")
 columns = list(data.columns)
 
 
-main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: raise awareness on technical developments and services implemented in the project; enhance their impact; dynamize the use through Europe of Artificial Intelligence (AI) in an High-Performance Computing (HPC) context. Connecting smaller (≤Tier-2) HPC centers, local academic institutions, industry, and SMEs to RAISE’s developments and expertise will allow to uncover new user communities and to provide corresponding service and education. Hence, the CoE RAISE will act as an enabler for AI-based Exascale technologies. Visualize our activities in creating this European network by selecting a category and then a corresponding item." )        
-
-#html = f"<a href='{link}'><img src='imgs/map.png;base64,{image_base64}'></a>"
-#main_panel.markdown(html, unsafe_allow_html=True)
-
-#link = '[Map](./imgs/map.png)'
-#main_panel.markdown(link, unsafe_allow_html=True)
-#if(main_panel.button("Show map",disabled=True)):
-#    mymap = main_panel.image("imgs/map.png")
-#else:
-#    mymap = main_panel.empty()
+main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: raise awareness on technical developments and services implemented in the project; enhance their impact; dynamize the use through Europe of Artificial Intelligence (AI) in an High-Performance Computing (HPC) context. Connecting smaller (≤Tier-2) HPC centers, local academic institutions, industry, and SMEs to RAISE’s developments and expertise will allow to uncover new user communities and to provide corresponding service and education. Hence, the CoE RAISE will act as an enabler for AI-based Exascale technologies. RAISE partners are in charge of a given region, defined according to their geographical locations and previous contacts and collaborations. In this page, visualize our activities in creating this European network by selecting a category and then a corresponding item." )        
 
 edit = main_panel.checkbox("Show/Hide the map of the regions")
 if not edit:
