@@ -48,8 +48,8 @@ columns = list(data.columns)
 
 main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: raise awareness on technical developments and services implemented in the project; enhance their impact; dynamize the use through Europe of Artificial Intelligence (AI) in an High-Performance Computing (HPC) context. Connecting smaller (≤Tier-2) HPC centers, local academic institutions, industry, and SMEs to RAISE’s developments and expertise will allow to uncover new user communities and to provide corresponding service and education. Hence, the CoE RAISE will act as an enabler for AI-based Exascale technologies. Visualize our activities in creating this European network by selecting a category and then a corresponding item." )        
 
-html = f"<a href='{link}'><img src='imgs/map.png;base64,{image_base64}'></a>"
-main_panel.markdown(html, unsafe_allow_html=True)
+#html = f"<a href='{link}'><img src='imgs/map.png;base64,{image_base64}'></a>"
+#main_panel.markdown(html, unsafe_allow_html=True)
 
 #link = '[Map](./imgs/map.png)'
 #main_panel.markdown(link, unsafe_allow_html=True)
