@@ -48,7 +48,7 @@ main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: ra
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
         'Select a category',
-        ('Region','Activity')
+        ('Region','Activity','Institution/company')
         )
 datafilter = data[col].unique()
 rows = ["All items"]+list(datafilter)
@@ -58,6 +58,27 @@ row = selector_rows.selectbox(
         )
 
 if col == "Region":
+    if row == "All items":
+        main_panel.markdown("###  All regions" )        
+        main_panel.markdown( "  " )        
+        for name,content in data.iterrows():
+            main_panel.markdown( "#####  " + str(content[1]) + ", " + str(content[0]) )
+            main_panel.markdown( "* Activity:    "+str(content[2]) )
+            main_panel.markdown( "* Institution: "+str(content[3]) )
+            main_panel.markdown( "* Community:   "+str(content[4]) )
+            main_panel.markdown( "* Period:      "+str(content[5]) )
+            main_panel.markdown( "* Description: "+ "*" + name + "*" +": " )
+    else:
+        main_panel.markdown( "###  " + row + " region" )        
+        main_panel.markdown( "  " )        
+        for name,content in data.loc[data[col]==row,:].iterrows():
+            main_panel.markdown( "#####  " + str(content[0]) +':' )
+            main_panel.markdown( "* Activity:    "+str(content[2]) )
+            main_panel.markdown( "* Institution: "+str(content[3]) )
+            main_panel.markdown( "* Community:   "+str(content[4]) )
+            main_panel.markdown( "* Period:      "+str(content[5]) )
+            main_panel.markdown( "* Description: "+ "*" + name + "*" )
+if col == "Activity":
     if row == "All items":
         main_panel.markdown("###  All regions" )        
         main_panel.markdown( "  " )        
