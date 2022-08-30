@@ -58,7 +58,7 @@ main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: ra
 #else:
 #    mymap = main_panel.empty()
 
-edit = main_panel.checkbox("Edit")
+edit = main_panel.checkbox("Show/Hide the map of the regions")
 if not edit:
     mymap = main_panel.empty()
 else:
