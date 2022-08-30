@@ -43,7 +43,8 @@ row = selector_rows.selectbox(
 
 if col == "Region":
     if row == "All items":
-        main_panel.markdown("###  All regions:" )        
+        main_panel.markdown("###  All regions" )        
+        main_panel.markdown( "  " )        
         for name,content in data.iterrows():
             main_panel.markdown( "#####  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( "* Activity:    "+str(content[2]) )
@@ -52,7 +53,8 @@ if col == "Region":
             main_panel.markdown( "* Period:      "+str(content[5]) )
             main_panel.markdown( "* Description: "+ "*" + name + "*" +": " )
     else:
-        main_panel.markdown( "###  " + row + " region:" )        
+        main_panel.markdown( "###  " + row + " region" )        
+        main_panel.markdown( "  " )        
         for name,content in data.loc[data[col]==row,:].iterrows():
             main_panel.markdown( "#####  " + str(content[0]) +':' )
             main_panel.markdown( "* Activity:    "+str(content[2]) )
