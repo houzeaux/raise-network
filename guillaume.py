@@ -51,13 +51,13 @@ if col == "Region":
             main_panel.markdown( "* Period:      "+str(content[5]) )
             main_panel.markdown( "* Description: "+ "*" + name + "*" +": " )
     else:
+        main_panel.markdown("#####  " + str(content[1]) + ", " + str(content[0]) +':' )        
         for name,content in data.loc[data[col]==row,:].iterrows():
-            main_panel.markdown("#####  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( "* Activity:    "+str(content[2]) )
             main_panel.markdown( "* Institution: "+str(content[3]) )
             main_panel.markdown( "* Community:   "+str(content[4]) )
             main_panel.markdown( "* Period:      "+str(content[5]) )
-            main_panel.markdown( "* Description: "+ name +": " )
+            main_panel.markdown( "* Description: "+ "*" + name + "*" +": " )
 else:
     if row == "All items":
         for name,content in data.iterrows():
@@ -65,13 +65,13 @@ else:
             main_panel.markdown( "* Institution: "+str(content[3]) )
             main_panel.markdown( "* Community:   "+str(content[4]) )
             main_panel.markdown( "* Period:      "+str(content[5]) )
-            main_panel.markdown( "* Description: "+ name +": " )
+            main_panel.markdown( "* Description: "+ "*" + name + "*" +": " )
     else:
         for name,content in data.loc[data[col]==row,:].iterrows():
             main_panel.markdown("#####  " + str(content[1]) + ", " + str(content[0]) +':' )
             main_panel.markdown( "* Institution: "+str(content[3]) )
             main_panel.markdown( "* Community:   "+str(content[4]) )
             main_panel.markdown( "* Period:      "+str(content[5]) )
-            main_panel.markdown( "* Description: "+ name +": " )
+            main_panel.markdown( "* Description: "+ "*" + name + "*" +": " )
         
 
