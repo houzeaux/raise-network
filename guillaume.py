@@ -62,7 +62,7 @@ edit = main_panel.checkbox("Show/Hide the map of the regions")
 if not edit:
     mymap = main_panel.empty()
 else:
-    mymap = main_panel.image("imgs/map.png",width=400)
+    mymap = main_panel.image("imgs/map.png",width=800)
     
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
