@@ -43,7 +43,7 @@ data = data.sort_values(by="Region")
 columns = list(data.columns)
 
 
-main_panel.markdown("#  Task 6.2 aims at developing a European RAISE Network to: raise awareness on technical developments and services implemented in the project; enhance their impact; dynamize the use through Europe of Artificial Intelligence (AI) in an High-Performance Computing (HPC) context. Connecting smaller (≤Tier-2) HPC centers, local academic institutions, industry, and SMEs to RAISE’s developments and expertise will allow to uncover new user communities and to provide corresponding service and education. Hence, the CoE RAISE will act as an enabler for AI-based Exascale technologies. This page summarizes the interactions the partners have been having during the first two reporting perdios at M6 and M18." )        
+main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: raise awareness on technical developments and services implemented in the project; enhance their impact; dynamize the use through Europe of Artificial Intelligence (AI) in an High-Performance Computing (HPC) context. Connecting smaller (≤Tier-2) HPC centers, local academic institutions, industry, and SMEs to RAISE’s developments and expertise will allow to uncover new user communities and to provide corresponding service and education. Hence, the CoE RAISE will act as an enabler for AI-based Exascale technologies. This page summarizes the interactions the partners have been having during the first two reporting perdios at M6 and M18." )        
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
