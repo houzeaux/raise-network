@@ -35,6 +35,14 @@ sidebar.write("## T6.2 Establishment of a European RAISE network ")
 sidebar.write("")
 sidebar.write("The task contributors represent the responsible institutions per participating country. In this task, they establish a European AISee network by implementing country-dependent access and contact nodes. They connect the activities of RAISE to those of their network, national, European and international. That is, FZJ establishes connections, e.g., to GCS, HAICU, and IRT in Germany as well as to PRACE together with BSC at European level. UOI connects as a hub to the Nordic countries with NeiC and COST Action CA18203, and together with RTU to EOSC-NORDIC. CYI acts as hub for the EM, has strong links with SESAME, with the Balkans through NI4OS-Europe, as well as links with the oil and gas industry (the Delphi consortium, see Sec. 4.2.2). It extends its reach to other industries through the SimEA ERA Chair project. RTU acts as a hub for the Baltic Region through SESAME Net. RWTH employs its channels to Gauss Alliance and HPC.NRW. CERN connects to INFN, Siemens, and E4 Computer Engineering. CERFACS establishes connections with academics (ISAE-Supaero, IRT, ONERA) and industrial partners (AIRBUS, CNES, Safran) among other within the interdisciplinary institute ANITI and the Helios multi- laboratory workgroup. FM exploits its industrial partner network. Partners involved in other CoEs or European projects establish corresponding connections, i.e., to EXCELLERAT, POP, EoCoE-II, EPI, DEEP, EMME-CARE, etc. (see. Sec. 1.3.3, Tab. 4). Furthermore, connections to ETP4HPC are established. ")
 #sidebar.image("imgs/map.png",width=400)
+if sidebar.button('Wish Good morning'):
+
+    sidebar.write('Good Morning') #displayed when the button is clicked
+
+else:
+
+    sidebar.write('Have a great day') #displayed when the button is unclicked
+
 
 footer.image("imgs/raise.png",width=200)
 
@@ -45,15 +53,6 @@ columns = list(data.columns)
 
 
 main_panel.markdown("Task 6.2 aims at developing a European RAISE Network to: raise awareness on technical developments and services implemented in the project; enhance their impact; dynamize the use through Europe of Artificial Intelligence (AI) in an High-Performance Computing (HPC) context. Connecting smaller (≤Tier-2) HPC centers, local academic institutions, industry, and SMEs to RAISE’s developments and expertise will allow to uncover new user communities and to provide corresponding service and education. Hence, the CoE RAISE will act as an enabler for AI-based Exascale technologies. Visualize our activities in creating this European network by selecting a category and then a corresponding item." )        
-
-if st.button('Wish Good morning'):
-
-    st.write('Good Morning') #displayed when the button is clicked
-
-else:
-
-    st.write('Have a great day') #displayed when the button is unclicked
-
 
 selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
 col = selector_columns.selectbox(
