@@ -13,8 +13,8 @@ footer = st.container()
 
 main_panel.markdown(reduce_header_height_style, unsafe_allow_html=True)
 main_panel.markdown(unblur_header,unsafe_allow_html=True)
-
-# doing the upper menu
+#
+# Sidebar
 #
 st.markdown(
     """
@@ -42,7 +42,7 @@ data = data.sort_values(by="Region")
 
 columns = list(data.columns)
 
-selector_columns, spacer, selector_rows = main_panel.columns([3,1,3])
+selector_columns, spacer, selector_rows = main_panel.columns([1,1,1])
 col = selector_columns.selectbox(
         'Select a category',
         ('Region','Activity')
