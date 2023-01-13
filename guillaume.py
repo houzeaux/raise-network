@@ -22,10 +22,6 @@ st.markdown(
     [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
         width: 450px;
     }
-    [data-testid="stSidebar"][aria-expanded="false"] > div:first-child {
-        width: 450px;
-        margin-left: -450px;
-    }
     </style>
     """,
     unsafe_allow_html=True,
